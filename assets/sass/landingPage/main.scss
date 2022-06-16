@@ -1,0 +1,124 @@
+@import "../variables";
+@import "../typography";
+@import "../base";
+
+.header {
+  height: 400px; //To be changed according to design
+  background-color: $primary-color-900;
+  margin-bottom: 48px;
+}
+
+.features {
+  &__header {
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+    // margin-bottom: 20px;
+  }
+
+  &__type {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    padding: 20px 129px;
+
+    &--img {
+      height: 300px;
+      width: 468px;
+      background-color: $primary-blue-800;
+      align-self: flex-end;
+    }
+
+    // &--text {
+    // }
+
+    &--header {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56.25px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    &--subtext {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+    }
+  }
+}
+
+.extra {
+  .heading {
+    font-size: 48px;
+    line-height: 56.25px;
+    text-align: center;
+    margin-top: 115px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    background: #d6e0eb;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+}
+
+.faq-section {
+  text-align: center;
+  width: 70%;
+  max-width: 998px;
+  margin: 186px auto;
+
+  .faq {
+    background-color: $grey;
+    margin-bottom: 28px;
+    padding: 32px 89px;
+    text-align: left;
+    position: relative;
+  }
+
+  .faq__header {
+    font-size: 48px;
+    line-height: 56.25px;
+    font-weight: 400;
+    margin-bottom: 49px;
+  }
+
+  .toggle-icon {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .faq-ques {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .faq-ans {
+    letter-spacing: 0.0015em;
+    line-height: 19px;
+    font-style: 16px;
+    margin-top: 16px;
+    display: none;
+  }
+
+  .faq.show .faq-ans {
+    display: block;
+  }
+
+  .btn--primary {
+    margin-top: 12px;
+  }
+}

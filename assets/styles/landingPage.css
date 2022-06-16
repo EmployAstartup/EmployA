@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap");
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 12px 33px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.0125em;
+  white-space: nowrap; }
+
+.btn--primary {
+  color: #ffffff;
+  background-color: #0d3266;
+  text-transform: uppercase;
+  border-radius: 8px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  height: 400px;
+  background-color: #234466;
+  margin-bottom: 48px; }
+
+.features__header {
+  text-align: center;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 300;
+  letter-spacing: -0.005em; }
+
+.features__type {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+  padding: 20px 129px; }
+  .features__type--img {
+    height: 300px;
+    width: 468px;
+    background-color: #0d3266;
+    align-self: flex-end; }
+  .features__type--header {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.25px;
+    margin-bottom: 48px;
+    text-align: center; }
+  .features__type--subtext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em; }
+
+.extra .heading {
+  font-size: 48px;
+  line-height: 56.25px;
+  text-align: center;
+  margin-top: 115px;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.extra .circle {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  background: #d6e0eb;
+  margin: 0 auto;
+  margin-top: 55px; }
+
+.faq-section {
+  text-align: center;
+  width: 70%;
+  max-width: 998px;
+  margin: 186px auto; }
+  .faq-section .faq {
+    background-color: #d9d9d9;
+    margin-bottom: 28px;
+    padding: 32px 89px;
+    text-align: left;
+    position: relative; }
+  .faq-section .faq__header {
+    font-size: 48px;
+    line-height: 56.25px;
+    font-weight: 400;
+    margin-bottom: 49px; }
+  .faq-section .toggle-icon {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 48px;
+    font-weight: 400; }
+  .faq-section .faq-ques {
+    font-size: 24px;
+    line-height: 28px; }
+  .faq-section .faq-ans {
+    letter-spacing: 0.0015em;
+    line-height: 19px;
+    font-style: 16px;
+    margin-top: 16px;
+    display: none; }
+  .faq-section .faq.show .faq-ans {
+    display: block; }
+  .faq-section .btn--primary {
+    margin-top: 12px; }

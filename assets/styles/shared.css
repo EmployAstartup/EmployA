@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap");
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 12px 33px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.0125em;
+  white-space: nowrap; }
+
+.btn--primary {
+  color: #ffffff;
+  background-color: #0d3266;
+  text-transform: uppercase;
+  border-radius: 8px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 120px;
+  gap: 26px;
+  background-color: #ffffff; }
+  .nav__logo {
+    height: 2rem;
+    width: auto; }
+  .nav__links {
+    flex: 1;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 40px; }
+  .nav__links a {
+    white-space: nowrap;
+    color: #0a264d;
+    font-weight: 600;
+    letter-spacing: 0.0015em;
+    font-size: 16px;
+    line-height: 10px;
+    text-decoration: none; }
+  .nav .signIn--btn {
+    color: #0a264d;
+    border: 1px solid #5f5f5f;
+    border-radius: 6px;
+    background-color: #ffffff; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 12px 33px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.0125em;
+  white-space: nowrap; }
+
+.btn--primary {
+  color: #ffffff;
+  background-color: #0d3266;
+  text-transform: uppercase;
+  border-radius: 8px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 88px 102px;
+  background-color: rgba(35, 68, 102, 0.5);
+  align-items: center;
+  border: 0.5px solid #000000; }
+  .footer__logo {
+    height: 2rem;
+    margin-bottom: 26px; }
+  .footer__logo-text {
+    width: 240px; }
+  .footer__links-title {
+    margin-bottom: 1.5rem; }

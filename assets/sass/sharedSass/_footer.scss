@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../typography";
+@import "../base";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 88px 102px;
+  background-color: $footer-bg;
+  align-items: center;
+  border: 0.5px solid $black;
+
+  &__logo {
+    height: 2rem;
+    margin-bottom: 26px;
+  }
+
+  &__logo-text {
+    width: 240px;
+  }
+
+  &__links-title {
+    margin-bottom: 1.5rem;
+  }
+}
