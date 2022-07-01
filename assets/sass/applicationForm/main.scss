@@ -1,0 +1,162 @@
+@import "../variables";
+@import "../typography";
+
+body {
+  background-color: $primary-blue-600;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.container {
+  z-index: 500;
+  position: relative;
+  background-color: $white;
+  width: 85%;
+  margin: 5rem auto;
+  padding: 3.25rem 6rem;
+  text-align: center;
+  box-shadow: 0px 0px 71px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 785px;
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: $primary-blue-600;
+    margin-bottom: 55px;
+  }
+
+  .main-content {
+    text-align: left;
+
+    .company {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+      color: $primary-blue-700;
+    }
+
+    .info {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      color: $primary-blue-700;
+
+      span {
+        font-weight: 500;
+        text-align: justify;
+      }
+    }
+
+    .job-desc {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      color: $primary-blue-700;
+
+      .jtitle {
+        white-space: nowrap;
+      }
+
+      .span {
+        font-weight: 500;
+        text-align: justify;
+      }
+    }
+
+    .application-form {
+      width: 85%;
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 18px;
+        text-align: left;
+
+        .error {
+          color: $red;
+          line-height: 19px;
+          font-weight: 600;
+        }
+
+        .label {
+          color: $primary-blue-700;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 600;
+          background-color: #fff;
+          width: fit-content;
+        }
+
+        input,
+        textarea {
+          font-family: inherit;
+          background-color: transparent;
+          border: 1px solid $primary-blue-600;
+          outline: none;
+          border-radius: 6px;
+          padding: 1rem;
+        }
+
+        textarea {
+          resize: none;
+          height: 80px;
+          color: $light-grey;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.005em;
+        }
+
+        input:focus {
+          color: currentColor;
+        }
+
+        input:focus .label {
+          transform: translateY(100%);
+          margin-left: 10px;
+        }
+
+        input::placeholder {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.005em;
+          color: $light-grey;
+        }
+      }
+
+      .cv {
+        border: 0.5px solid $light-grey;
+        margin: 45px 0 60px;
+        padding: 30px 95px;
+
+        font-weight: 600;
+        line-height: 19px;
+        text-align: justify;
+
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .form-btn {
+    font-family: inherit;
+    text-align: center;
+    color: $white;
+    background-color: $primary-blue-600;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.0125em;
+  }
+}

@@ -1,0 +1,141 @@
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none; }
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 12px 33px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.0125em;
+  white-space: nowrap; }
+
+body {
+  background-color: #134b99;
+  position: relative;
+  min-height: 100vh;
+  height: 100%; }
+
+.container {
+  z-index: 500;
+  position: relative;
+  background-color: #ffffff;
+  width: 85%;
+  margin: 5rem auto;
+  padding: 3.25rem 6rem;
+  text-align: center;
+  box-shadow: 0px 0px 71px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 785px; }
+  .container .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #134b99;
+    margin-bottom: 55px; }
+  .container .main-content {
+    text-align: left; }
+    .container .main-content .company {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+      color: #09254c; }
+    .container .main-content .info {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      color: #09254c; }
+      .container .main-content .info span {
+        font-weight: 500;
+        text-align: justify; }
+    .container .main-content .job-desc {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      color: #09254c; }
+      .container .main-content .job-desc .jtitle {
+        white-space: nowrap; }
+      .container .main-content .job-desc .span {
+        font-weight: 500;
+        text-align: justify; }
+    .container .main-content .application-form {
+      width: 85%; }
+      .container .main-content .application-form .form-input {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 18px;
+        text-align: left; }
+        .container .main-content .application-form .form-input .error {
+          color: #d71515;
+          line-height: 19px;
+          font-weight: 600; }
+        .container .main-content .application-form .form-input .label {
+          color: #09254c;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 600;
+          background-color: #fff;
+          width: fit-content; }
+        .container .main-content .application-form .form-input input,
+        .container .main-content .application-form .form-input textarea {
+          font-family: inherit;
+          background-color: transparent;
+          border: 1px solid #134b99;
+          outline: none;
+          border-radius: 6px;
+          padding: 1rem; }
+        .container .main-content .application-form .form-input textarea {
+          resize: none;
+          height: 80px;
+          color: #bfbfbf;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.005em; }
+        .container .main-content .application-form .form-input input:focus {
+          color: currentColor; }
+        .container .main-content .application-form .form-input input:focus .label {
+          transform: translateY(100%);
+          margin-left: 10px; }
+        .container .main-content .application-form .form-input input::placeholder {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.005em;
+          color: #bfbfbf; }
+      .container .main-content .application-form .cv {
+        border: 0.5px solid #bfbfbf;
+        margin: 45px 0 60px;
+        padding: 30px 95px;
+        font-weight: 600;
+        line-height: 19px;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.5); }
+  .container .form-btn {
+    font-family: inherit;
+    text-align: center;
+    color: #ffffff;
+    background-color: #134b99;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.0125em; }

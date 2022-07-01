@@ -1,0 +1,51 @@
+body {
+  overflow-x: hidden; }
+  body .dots2 {
+    right: 0;
+    bottom: 0; }
+
+.signIn .signIn__form-container .title {
+  font-weight: 700;
+  color: #134b99;
+  font-size: 28px;
+  line-height: 34px; }
+
+.signIn .signIn__form-container .subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #09254c;
+  margin: 20px 0 86px; }
+
+.signIn .signIn__form-container .employment-info {
+  color: #09254c;
+  text-align: left; }
+
+.signIn .signIn__form-container .company {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 20px; }
+
+.signIn .signIn__form-container .info {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px; }
+  .signIn .signIn__form-container .info span {
+    font-weight: 500; }
+
+@media only screen and (max-width: 828px) {
+  .signIn {
+    width: 95%; }
+    .signIn .signIn__form-container {
+      width: 90%; } }
+
+@media only screen and (max-width: 698px) {
+  .signIn .subtitle {
+    width: 100%;
+    text-align: left; } }
+
+@media only screen and (max-width: 235px) {
+  .signIn {
+    word-break: break-all; } }

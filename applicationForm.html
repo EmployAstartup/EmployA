@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="shortcut icon"
       href="assets/images/favicon.svg"
@@ -12,20 +11,13 @@
     />
 
     <link rel="stylesheet" href="./assets/styles/shared.css" />
-    <link rel="stylesheet" href="./assets/styles/signIn.css" />
+    <link rel="stylesheet" href="./assets/styles/applicationForm.css" />
 
     <script defer src="./assets/script/script.js"></script>
-    <script defer src="./assets/script/forgotP.js"></script>
 
-    <title>Reset Password / Employ-A</title>
+    <title>Application Form / Employ-A</title>
   </head>
   <body>
-    <img src="./assets/images/Union.svg" alt="dots" class="dots1" />
-
-    <img src="./assets/images/headerSvg.svg" alt="img" class="large-svg" />
-
-    <img src="./assets/images/Union (1).svg" alt="dots" class="dots2" />
-
     <nav class="nav-bar">
       <a href="./index.html">
         <img
@@ -100,69 +92,72 @@
       </div>
     </div>
 
-    <img src="./assets/images/header-cloud.svg " alt="" class="center-svg" />
+    <main class="container">
+      <h1 class="title">Application</h1>
+      <div class="main-content">
+        <h2 class="company">LOGOFY LTD</h2>
+        <p class="info">Job Position: <span>Accountant</span></p>
+        <p class="info">Location: <span>Ikeja, Lagos</span></p>
+        <p class="info">Employment Requirement: <span>Degree / HND</span></p>
+        <p class="info">Work Experience: <span>2 Years</span></p>
+        <p class="info">Application Closing Date: <span>22/July/2022 </span></p>
 
-    <main class="signIn">
-      <div class="signIn__form-container" id="reset">
-        <h1 class="signIn__title">Forgot Your Password?</h1>
-        <p class="signIn__subtitle">
-          Enter the email address associated with your password
-        </p>
+        <div class="job-desc">
+          <p class="jtitle">Job Description:</p>
 
-        <form action="" id="form" class="signIn__form" novalidate>
-          <div class="signIn__input" id="input-container">
-            <label for="email" class="label">Email</label>
+          <p class="span">
+            Lorem ipsum dolor lamar nadar hadresh, Lorem ipsum dolor lamar nadar
+            hadresh,Lorem ipsum dolor lamar nadar hadresh,Lorem ipsum dolor
+            lamar nadar hadresh,Lorem ipsum dolor lamar nadar hadresh,Lorem
+            ipsum dolor lamar nadar hadresh,Lorem ipsum dolor lamar nadar
+            hadresh,Lorem ipsum dolor lamar nadar hadresh.
+          </p>
+        </div>
+
+        <form action="" class="application-form">
+          <div class="form-input">
+            <label class="label" for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+
+          <div class="form-input">
+            <label class="label" for="email">Email</label>
             <input type="email" id="email" placeholder="name@example.com" />
           </div>
 
-          <button type="submit" class="signIn__button">Reset Password</button>
+          <div class="form-input">
+            <label class="label" for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+
+          <div class="form-input">
+            <label class="label" for="address">Address</label>
+            <textarea name="address" id="address">Enter your address</textarea>
+          </div>
+
+          <div class="form-input">
+            <label class="label" for="edu">Education Qualification</label>
+            <input
+              type="text"
+              id="edu"
+              placeholder="Enter your qualification"
+            />
+          </div>
+
+          <div class="form-input">
+            <label class="label" for="work">Work Experience</label>
+            <input type="number" min="0" id="work" placeholder="No of years" />
+          </div>
+
+          <div class="cv">Click to upload CV or drag and drop here</div>
         </form>
       </div>
 
-      <div class="signIn__form-container success" id="success">
-        <h1 class="signIn__title">Successful!</h1>
-        <p class="signIn__subtitle">
-          We have sent a password reset instruction to your email.
-        </p>
-        <button class="signIn__button" type="submit">Sign In</button>
-      </div>
+      <button class="form-btn" type="submit"><a href="#">Submit</a></button>
     </main>
-
-    <footer class="signIn__footer">
-      <div class="logo-box">
-        <img
-          src="./assets/images/EMPLOY-A LOGO 1.png"
-          alt="logo"
-          class="logo"
-        />
-        <p class="text">Easy work, Easy outcome</p>
-      </div>
-
-      <ul class="links">
-        <li>
-          <a href="https://web.facebook.com/Employ-A-105029212248199">
-            <img src="./assets/images/facebook.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/employ_a">
-            <img src="./assets/images/twitter.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/employa_/">
-            <img src="./assets/images/Ig.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/company/employ-a/">
-            <img src="./assets/images/linkedin.svg" alt=""
-          /></a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>

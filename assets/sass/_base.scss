@@ -1,4 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap");
+@import "variables";
+
+@font-face {
+  font-family: "Wavehaus";
+  src: url("../../font/Wavehaus-42Light.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Wavehaus";
+  src: url("../../font/Wavehaus-66Book.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Wavehaus";
+  src: url("../../font/Wavehaus-95SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Wavehaus";
+  src: url("../../font/Wavehaus-128Bold.otf") format("opentype");
+  font-weight: 700;
+}
 
 *,
 *::before,
@@ -13,5 +37,7 @@ html {
 }
 
 body {
-  font-family: $font-primary;
+  font-family: "Wavehaus", sans-serif;
+  background-color: $bg-color;
+  hyphens: manual;
 }

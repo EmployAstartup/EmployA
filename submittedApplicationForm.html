@@ -13,11 +13,13 @@
 
     <link rel="stylesheet" href="./assets/styles/shared.css" />
     <link rel="stylesheet" href="./assets/styles/signIn.css" />
-
+    <link
+      rel="stylesheet"
+      href="./assets/styles/submittedApplicationForm.css"
+    />
     <script defer src="./assets/script/script.js"></script>
-    <script defer src="./assets/script/forgotP.js"></script>
 
-    <title>Reset Password / Employ-A</title>
+    <title>Application Form Submitted / Employ-A</title>
   </head>
   <body>
     <img src="./assets/images/Union.svg" alt="dots" class="dots1" />
@@ -100,69 +102,25 @@
       </div>
     </div>
 
-    <img src="./assets/images/header-cloud.svg " alt="" class="center-svg" />
-
     <main class="signIn">
-      <div class="signIn__form-container" id="reset">
-        <h1 class="signIn__title">Forgot Your Password?</h1>
-        <p class="signIn__subtitle">
-          Enter the email address associated with your password
+      <div class="signIn__form-container">
+        <h2 class="title">Congratulations</h2>
+        <p class="subtitle">
+          You have successfully submitted your application, you will be
+          contacted if you are qualified for the next stage. Thank you
         </p>
 
-        <form action="" id="form" class="signIn__form" novalidate>
-          <div class="signIn__input" id="input-container">
-            <label for="email" class="label">Email</label>
-            <input type="email" id="email" placeholder="name@example.com" />
-          </div>
-
-          <button type="submit" class="signIn__button">Reset Password</button>
-        </form>
-      </div>
-
-      <div class="signIn__form-container success" id="success">
-        <h1 class="signIn__title">Successful!</h1>
-        <p class="signIn__subtitle">
-          We have sent a password reset instruction to your email.
-        </p>
-        <button class="signIn__button" type="submit">Sign In</button>
+        <div class="employment-info">
+          <h2 class="company">LOGOFY LTD</h2>
+          <p class="info">Job Position: <span>Accountant</span></p>
+          <p class="info">Location: <span>Ikeja, Lagos</span></p>
+          <p class="info">Employment Requirement: <span>Degree / HND</span></p>
+          <p class="info">Work Experience: <span>2 Years</span></p>
+          <p class="info">
+            Application Closing Date: <span>22/July/2022 </span>
+          </p>
+        </div>
       </div>
     </main>
-
-    <footer class="signIn__footer">
-      <div class="logo-box">
-        <img
-          src="./assets/images/EMPLOY-A LOGO 1.png"
-          alt="logo"
-          class="logo"
-        />
-        <p class="text">Easy work, Easy outcome</p>
-      </div>
-
-      <ul class="links">
-        <li>
-          <a href="https://web.facebook.com/Employ-A-105029212248199">
-            <img src="./assets/images/facebook.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/employ_a">
-            <img src="./assets/images/twitter.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/employa_/">
-            <img src="./assets/images/Ig.svg" alt=""
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/company/employ-a/">
-            <img src="./assets/images/linkedin.svg" alt=""
-          /></a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>

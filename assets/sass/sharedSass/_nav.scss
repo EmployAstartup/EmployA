@@ -1,12 +1,36 @@
 @import "../variables";
 @import "../typography";
-@import "../base";
 
-.nav {
+.getStarted--btn,
+.signIn--btn {
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.0125em;
+}
+
+.signIn--btn {
+  color: #103f80;
+  border: 1px solid currentColor;
+}
+
+.getStarted--btn {
+  padding: 12px 26px;
+  background-color: $primary-blue-600;
+  color: $white;
+}
+
+.open {
+  display: none;
+}
+
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 19px 120px;
+  padding: 21px 4rem;
   gap: 26px;
   background-color: $white;
 
@@ -15,29 +39,111 @@
     width: auto;
   }
 
+  a {
+    white-space: nowrap;
+  }
+
+  .center {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__links-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 26px;
+  }
+
   &__links {
     flex: 1;
     display: flex;
     list-style-type: none;
     justify-content: center;
     gap: 40px;
-    // align-self: flex-end;
   }
 
   &__links a {
-    white-space: nowrap;
-    color: $primary-blue-900;
     font-weight: 600;
     letter-spacing: 0.0015em;
-    font-size: 16px;
-    line-height: 10px;
+    font-size: 24px;
+    line-height: 29px;
     text-decoration: none;
+    color: $primary-blue-600;
   }
 
-  .signIn--btn {
-    color: $primary-blue-900;
-    border: 1px solid $secondary-color-800;
-    border-radius: 6px;
-    background-color: $white;
+  @media only screen and (max-width: 1024px) {
+    padding: 21px 2rem;
   }
+  @media only screen and (max-width: 950px) {
+    .open {
+      display: block;
+    }
+
+    &__links-container {
+      display: none;
+    }
+  }
+}
+
+.mobile-btn {
+  color: $primary-blue-600;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1000;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateX(100%);
+  width: 60%;
+  transition: transform 1s ease;
+  min-width: 320px;
+  max-width: 480px;
+
+  .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &__links1 {
+    li {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      font-weight: 600;
+      letter-spacing: 0.0015em;
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration: none;
+      color: $primary-blue-600;
+    }
+  }
+
+  &__links2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+  }
+}
+
+.side-nav.visible {
+  transform: translateX(0);
 }

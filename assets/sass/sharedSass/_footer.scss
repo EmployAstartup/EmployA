@@ -1,25 +1,114 @@
 @import "../variables";
-@import "../typography";
-@import "../base";
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 88px 102px;
-  background-color: $footer-bg;
-  align-items: center;
+  padding: 65px 2rem;
+  background-color: $primary-blue-600;
   border: 0.5px solid $black;
+  color: $white;
+
+  display: grid;
+  grid-template-columns: 296px repeat(auto-fit, minmax(150px, auto));
+  justify-content: space-between;
+  gap: 50px;
 
   &__logo {
-    height: 2rem;
-    margin-bottom: 26px;
+    margin-bottom: 7px;
+    max-width: 100%;
   }
 
   &__logo-text {
-    width: 240px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 19px;
   }
 
   &__links-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
+  &__links {
+    li {
+      white-space: nowrap;
+      line-height: 23px;
+      font-weight: 500;
+    }
+  }
+
+  &__box4 {
+    p {
+      margin-bottom: 10px;
+    }
+
+    input {
+      background-color: transparent;
+      border: 1px solid $primary-blue-100;
+      outline: 0;
+      font-family: inherit;
+      padding: 8px 10px;
+      border-radius: 3px;
+      margin: 8px 0;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    input:focus {
+      color: currentColor;
+    }
+
+    input::placeholder {
+      color: $primary-blue-100;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    button {
+      display: block;
+      background-color: $primary-blue-100;
+      border: 1px solid $primary-blue-600;
+      color: $primary-blue-600;
+      padding: 8px 20px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.0125em;
+      border-radius: 6px;
+    }
+  }
+
+  &__box5 {
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li a {
+      word-break: break-all;
+      max-width: 90%;
+      display: block;
+    }
+
+    li a img {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    li a .lastChild {
+      display: inline-block;
+      hyphens: auto;
+      word-break: break-all;
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    &__logo-text {
+      text-align: left;
+    }
   }
 }
