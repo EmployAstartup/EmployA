@@ -1,0 +1,164 @@
+.header {
+  background-color: #134b99;
+  position: relative;
+  padding: 140px 10px 450px 10px; }
+  .header__texts {
+    color: #ffffff;
+    text-align: center; }
+  .header__text {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.005em;
+    margin-bottom: 36px; }
+  .header__subtext {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px; }
+
+.form {
+  position: relative;
+  top: -385px;
+  background-color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding: 65px 100px;
+  box-shadow: 0px 0px 35px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  text-align: center; }
+  .form__input-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    gap: 20px; }
+    .form__input-container label {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #09254c; }
+    .form__input-container input {
+      padding: 1rem 10px;
+      font-family: inherit;
+      background-color: transparent;
+      border: 0.5px solid #134b99;
+      outline: none;
+      border-radius: 4px; }
+    .form__input-container input::placeholder {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em; }
+    .form__input-container .employees-count {
+      display: flex;
+      align-items: flex-end;
+      gap: 35px; }
+      .form__input-container .employees-count .amount {
+        background: #134b99;
+        box-shadow: 0px 0px 7.38462px rgba(0, 0, 0, 0.15);
+        border-radius: 2.27219px; }
+      .form__input-container .employees-count .amount::placeholder {
+        font-weight: 600;
+        vertical-align: bottom;
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 20px; }
+      .form__input-container .employees-count .amount:active,
+      .form__input-container .employees-count .amount:focus {
+        font-weight: 600;
+        color: #ffffff; }
+      .form__input-container .employees-count p {
+        font-weight: 500;
+        line-height: 19px;
+        color: #134b99; }
+    .form__input-container .checkbox label {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.001em;
+      color: #000000; }
+  .form-btn {
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #134b99;
+    padding: 12px 33px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0.0125em; }
+  .form-text {
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    color: #000000; }
+    .form-text a {
+      color: #134b99; }
+
+.options {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+  max-width: 1200px;
+  margin-top: -200px; }
+  .options__headline {
+    margin-bottom: 49px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #134b99; }
+  .options__container {
+    padding-top: 44px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 200px));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 100px;
+    grid-row-gap: 150px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px; }
+    .options__container .option__box {
+      position: relative;
+      height: 300px;
+      background-color: #ffffff; }
+    .options__container .option .image {
+      padding-top: 1rem; }
+    .options__container .option .image:last-of-type {
+      padding: 1rem; }
+    .options__container .option h2 {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      color: #134b99; }
+    .options__container .icon1 {
+      position: absolute;
+      right: -42.3px;
+      bottom: -42.9px; }
+    .options__container .icon2 {
+      position: absolute;
+      top: -44px;
+      right: -42.9px; }
+
+@media only screen and (max-width: 900px) {
+  .form {
+    padding: 60px 30px; } }
+
+@media only screen and (max-width: 788px) {
+  .form__input-container .employees-count {
+    display: block; }
+    .form__input-container .employees-count .count {
+      margin-right: 1rem; }
+    .form__input-container .employees-count p {
+      margin-top: 10px; } }
+
+@media only screen and (max-width: 517px) {
+  .form__input-container .employees-count .amount {
+    margin-top: 10px; } }

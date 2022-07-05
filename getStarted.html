@@ -5,10 +5,275 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./assets/styles/shared.css" />
     <link rel="stylesheet" href="./assets/styles/getStarted.css" />
 
-    <title>Document</title>
+    <script defer src="./assets/script/script.js"></script>
+
+    <title>Get Started / Employ-A</title>
   </head>
-  <body></body>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
+      <a href="./index.html">
+        <img
+          src="./assets/images/employa logo coloured 1.svg"
+          alt="logo"
+          class="nav-bar__logo"
+        />
+      </a>
+
+      <button class="open">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu-2 mobile-btn open-btn"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#2c3e50"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+
+      <div class="nav-bar__links-container">
+        <ul class="nav-bar__links">
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <a href="./signIn.html" class="signIn--btn">Sign In</a>
+        <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+      </div>
+    </nav>
+
+    <div class="side-nav">
+      <button class="close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x mobile-btn"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#2c3e50"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          id="close-btn"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <ul class="side-nav__links1">
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="side-nav__links2">
+        <a href="./signIn.html" class="signIn--btn">Sign In</a>
+        <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__texts">
+        <h1 class="header__text">Get Started with Employ-A</h1>
+        <p class="header__subtext">We are glad to have you here.</p>
+        <p class="header__subtext">Kindly register your organization below</p>
+      </div>
+    </header>
+
+    <!-- FORM -->
+    <form action="" class="form">
+      <div class="form__input-container">
+        <label for="org">Name of Organization</label>
+        <input type="text" id="org" placeholder="Type here..." />
+      </div>
+
+      <div class="form__input-container">
+        <label for="">Number of Employees</label>
+        <div class="employees-count">
+          <input type="number" min="1" class="count" />
+          <input type="" placeholder="N__,___" class="amount" />
+          <p>3% off 20 employees and above</p>
+        </div>
+      </div>
+
+      <div class="form__input-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Type here..." />
+      </div>
+
+      <div class="form__input-container">
+        <label for="num">Phone Number</label>
+        <input type="text" id="num" placeholder="Type here..." />
+      </div>
+
+      <div class="form__input-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Type here..." />
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">Show password</label>
+        </div>
+      </div>
+
+      <div class="form__input-container">
+        <label for="re-password">Re-type Password</label>
+        <input type="password" id="re-password" placeholder="Type here..." />
+
+        <div class="checkbox">
+          <input type="checkbox" id="re-checkbox" />
+          <label for="re-checkbox"
+            >Creating an account means you’re okay with our Terms of Service,
+            Privacy Policy, and our default Notification Settings.</label
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="form-btn">Register Now</button>
+      <p class="form-text">
+        Already have an account? <a href="./signIn.html">Login here</a>
+      </p>
+    </form>
+
+    <!-- OPTIONS -->
+    <section class="options">
+      <p class="options__headline">Improve productivity with these options</p>
+
+      <div class="options__container">
+        <div class="option__box">
+          <div class="option">
+            <img src="./assets/images/option1.svg" alt="" class="image" />
+            <h2>Time Efficiency</h2>
+          </div>
+          <img src="./assets/images/Unionicon1.svg" alt="" class="icon1" />
+        </div>
+
+        <div class="option__box">
+          <img src="./assets/images/Unionicon2.svg" alt="" class="icon2" />
+          <div class="option">
+            <img src="./assets/images/option2.svg" alt="" class="image" />
+            <h2>Self Service</h2>
+          </div>
+        </div>
+
+        <div class="option__box">
+          <div class="option">
+            <img src="./assets/images/option3.svg" alt="" class="image" />
+            <h2>24/7 Support</h2>
+          </div>
+          <img src="./assets/images/Unionicon1.svg" alt="" class="icon1" />
+        </div>
+
+        <div class="option__box">
+          <img src="./assets/images/Unionicon2.svg" alt="" class="icon2" />
+          <div class="option">
+            <img src="./assets/images/option4.svg" alt="" class="image" />
+            <h2>User Friendly</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="./assets/images/footer-logo.png"
+          alt="logo"
+          class="footer__logo"
+        />
+        <p class="footer__logo-text">Easy work, Easy outcome</p>
+      </div>
+
+      <div class="footer__box2">
+        <p class="footer__links-title">Quick Links</p>
+        <ul class="footer__links">
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./aboutUs.html">Services</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__box3">
+        <p class="footer__links-title">Services</p>
+        <ul class="footer__links">
+          <li><a href="">Hiring & Onboarding</a></li>
+          <li><a href="">Employee Mgt</a></li>
+          <li><a href="">Leave Mgt</a></li>
+          <li><a href="">Alert/Notices</a></li>
+        </ul>
+      </div>
+      <div class="footer__box4">
+        <p>
+          Subscribe <br />
+          to our Newsletter
+        </p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+
+      <div class="footer__box5" id="contact">
+        <ul class="footer__links">
+          <li>
+            <a href="https://web.facebook.com/Employ-A-105029212248199">
+              <img src="./assets/images/facebook.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="https://twitter.com/employ_a">
+              <img src="./assets/images/twitter.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/employa_/">
+              <img src="./assets/images/Ig.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/company/employ-a/">
+              <img src="./assets/images/linkedin.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:+23490121274522">
+              <img src="./assets/images/tel.svg" alt="" />+23490121274522</a
+            >
+          </li>
+
+          <li>
+            <a href="mailto:employastartup3@gmail.com">
+              <img src="./assets/images/mail.svg" alt="" />
+              <p class="lastChild">employastartup3@gmail.com</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -4,11 +4,819 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/styles/shared.css" />
+    <link rel="stylesheet" href="assets/styles/aboutUs.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/bootstrap-employa.css"> -->
 
-    <link rel="stylesheet" href="./assets/styles/shared.css" />
-    <link rel="stylesheet" href="./assets/styles/aboutUs.css" />
-
-    <title>Document</title>
+    <title>About Us / Employ-A</title>
   </head>
-  <body></body>
+
+  <body>
+    <main>
+      <!-- NAVIGATION -->
+      <nav class="nav-bar">
+        <a href="./index.html">
+          <img
+            src="./assets/images/employa logo coloured 1.svg"
+            alt="logo"
+            class="nav-bar__logo"
+          />
+        </a>
+
+        <button class="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2 mobile-btn open-btn"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
+
+        <div class="nav-bar__links-container">
+          <ul class="nav-bar__links">
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+
+          <a href="./signIn.html" class="signIn--btn">Sign In</a>
+          <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+        </div>
+      </nav>
+
+      <div class="side-nav">
+        <button class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-x mobile-btn"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            id="close-btn"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <ul class="side-nav__links1">
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="side-nav__links2">
+          <a href="./signIn.html" class="signIn--btn">Sign In</a>
+          <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+        </div>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section>
+        <header class="header">
+          <img src="./assets/images/Union.svg" alt="dots" class="dots1" />
+          <img src="./assets/images/Union (1).svg" alt="dots" class="dots2" />
+          <div class="hero-section">
+            <div class="header-imgs">
+              <img
+                src="assets/images/Rectangle 100.svg"
+                alt="rectangle"
+                class="rect1"
+              />
+              <div class="hero-imagediv">
+                <img
+                  src="assets/images/aboutUs-images/10.jpg"
+                  alt="a team of people in an office setting"
+                  class="hero-img"
+                />
+                <div class="header-text">
+                  <h1>About Us</h1>
+                </div>
+              </div>
+              <img
+                src="assets/images/Rectangle 100.svg"
+                alt="rectangle"
+                class="rect2"
+              />
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- HEADER TEXT -->
+      <div class="intro-section">
+        <div class="intro">
+          <img src="./assets/images/top-dota.svg" alt="dots-top" />
+          <p class="intro-text">
+            Employ_A is a full scale HR cloud computing software focused on the
+            management of employees data and other request as regarding human
+            resources operation. It handles employee profiling, recruitment
+            management. on-boarding payroll, staff relations, clock-Ins,
+            vacation requests, compensations, benefits and so on.
+          </p>
+          <img
+            src="./assets/images/bottom-dota.svg"
+            alt="dots-bottom"
+            class="dots-bottom"
+          />
+        </div>
+      </div>
+
+      <!-- MISSION STATEMENT -->
+      <div class="background">
+        <img
+          src="assets/images/aboutUs-images/big-circ.png"
+          alt="big circle"
+          class="big-circle"
+        />
+        <img
+          src="assets/images/aboutUs-images/circ1.png"
+          alt="small circle"
+          class="circ1"
+        />
+        <img
+          src="assets/images/aboutUs-images/circ2.png"
+          alt="small-circle"
+          class="circ2"
+        />
+        <img
+          src="assets/images/aboutUs-images/circ3.png"
+          alt="small-circle"
+          class="circ3"
+        />
+        <img
+          src="assets/images/aboutUs-images/circ4.png"
+          alt="small-circle"
+          class="circ4"
+        />
+      </div>
+
+      <div class="statements">
+        <div class="mission-text">
+          <img
+            src="assets/images/aboutUs-images/top.png"
+            alt="top angle"
+            class="angle t-angle1"
+          />
+          <p>
+            <span>Our Mission</span>: Developing an enterprise-wide human
+            resource information software for managing employees data, requests
+            and other human resources operations for managers across the globe.
+          </p>
+          <img
+            src="assets/images/aboutUs-images/bottom.png"
+            alt="bottom angle"
+            class="angle b-angle1"
+          />
+        </div>
+
+        <div class="vision-text">
+          <img
+            src="assets/images/aboutUs-images/top.png"
+            alt="top angle"
+            class="angle t-angle2"
+          />
+          <p>
+            <span>Our VIsion</span>: Reshaping and changing the traditional way
+            of employee management to a more tech focused modern future of HR
+            management.
+          </p>
+          <img
+            src="assets/images/aboutUs-images/bottom.png"
+            alt="bottom angle"
+            class="angle b-angle2"
+          />
+        </div>
+
+        <div class="statements-img">
+          <div class="mission-div">
+            <img
+              src="assets/images/aboutUs-images/mission.svg"
+              alt="mission statement"
+              class="mission-img"
+            />
+          </div>
+
+          <div class="vision-div">
+            <img
+              src="assets/images/aboutus-images/vision.svg"
+              alt="vision statement"
+              class="vision-img"
+            />
+          </div>
+
+          <div class="values-div">
+            <img
+              src="assets/images/aboutUs-images//values.svg"
+              alt="company's values"
+              class="values-img"
+            />
+          </div>
+        </div>
+        <div class="values-text">
+          <img
+            src="assets/images/aboutUs-images/top.png"
+            alt="top angle"
+            class="angle t-angle3"
+          />
+          <p>
+            <span>OUR VALUES</span>: Committed towards innovation, excellence,
+            integrity and creating a results-driven culture that builds teamwork
+            and secures vital information for easy access.
+          </p>
+          <img
+            src="assets/images/aboutUs-images/bottom.png"
+            alt="bottom angle"
+            class="angle b-angle3"
+          />
+        </div>
+      </div>
+
+      <section class="team-section">
+        <header>
+          <h1>Meet the Team</h1>
+        </header>
+
+        <div class="container">
+          <div class="row justify-content-evenly">
+            <div class="col-4 team-lead1 teamlead-card">
+              <img
+                src="assets/images/top-l-dot.png"
+                alt=""
+                class="top-l-dot topld-1"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/peace.png"
+                  alt="team leader"
+                  class="team-pic"
+                />
+                <img
+                  src="assets/images/aboutUs-images/team-stroke.png"
+                  alt=""
+                  class="stroke1"
+                />
+              </div>
+              <div class="team-text">
+                <div class="body-text1">
+                  <p>Azubuogu Peace</p>
+                </div>
+                <div class="body-text2">
+                  <p>Team Lead</p>
+                </div>
+              </div>
+              <div class="icons">
+                <a href=""
+                  ><img
+                    src="assets/images/aboutUs-images/icon-twit.png"
+                    alt="twitter"
+                    class="twitter"
+                /></a>
+                <a href=""
+                  ><img
+                    src="assets/images/aboutUs-images/icon-email.png"
+                    alt="email"
+                    class="email"
+                /></a>
+              </div>
+            </div>
+
+            <div class="col-4 team-lead2 teamlead-card">
+              <img
+                src="assets/images/bottom-r-dot.png"
+                alt=""
+                class="bottom-r-dot bottomrd-1"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutus-images/blessing.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+                <img
+                  src="assets/images/aboutUs-images/team-stroke.png"
+                  alt=""
+                  class="stroke2"
+                />
+              </div>
+              <div class="team-text">
+                <div class="body-text1">
+                  <p>Umunna Blessing</p>
+                </div>
+                <div class="body-text2">
+                  <p>Asst. Team Lead</p>
+                </div>
+              </div>
+              <div class="icons">
+                <a href=""
+                  ><img
+                    src="assets/images/aboutUs-images/icon-twit.png"
+                    alt="twitter"
+                    class="twitter"
+                /></a>
+                <a href=""
+                  ><img
+                    src="assets/images/aboutUs-images/icon-email.png"
+                    alt="email"
+                    class="email"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-sect">
+          <div class="row justify-content-evenly">
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/top-l-dot.png"
+                alt=""
+                class="top-l-dot topld-2"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/tutu.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Adetutu Osigbanjo</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Product Managers</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/bottom-l-dot.png"
+                alt=""
+                class="bottom-l-dot bottomld-1"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/ibukun.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <p class="body-text1">Ibukunoluwa Asekun</p>
+                  <p class="body-text2">Lead, Product Design</p>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/top-l-dot.png"
+                alt=""
+                class="top-l-dot topld-3"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/esther.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Esther Obaro</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Quality Assurance</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/bottom-l-dot.png"
+                alt=""
+                class="bottom-l-dot bottomld-2"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/adewunmi.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Adewunmi J. Oduntan</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Digital Marketers</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/top-l-dot.png"
+                alt=""
+                class="top-l-dot topld-4"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/samuel.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Aku Samuel</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Video Animators</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-evenly">
+            <div class="col-4 team-card">
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/victor.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Bamigbola Victor</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Data Analytics</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/bottom-l-dot.png"
+                alt=""
+                class="bottom-l-dot bottomld-3"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/taiwo.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Taiwo Hassan</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Developers</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/joseph.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Oba Eloho Joseph</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, Graphic Designers</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <img
+                src="assets/images/bottom-r-dot.png"
+                alt=""
+                class="bottom-r-dot bottomrd-2"
+              />
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/enobong.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Enobong Victor Okposin</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, CRM</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 team-card">
+              <div class="team-imgs">
+                <img
+                  src="assets/images/aboutUs-images/temi.png"
+                  alt="team member"
+                  class="team-pic"
+                />
+              </div>
+              <div class="team-body">
+                <div class="team-text">
+                  <div class="body-text1">
+                    <p>Temiloluwa</p>
+                  </div>
+                  <div class="body-text2">
+                    <p>Lead, MS Word</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-twit.png"
+                      alt="twitter"
+                      class="twitter"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="assets/images/aboutUs-images/icon-email.png"
+                      alt="email"
+                      class="email"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="./assets/images/footer-logo.png"
+          alt="logo"
+          class="footer__logo"
+        />
+        <p class="footer__logo-text">Easy work, Easy outcome</p>
+      </div>
+
+      <div class="footer__box2">
+        <p class="footer__links-title">Quick Links</p>
+        <ul class="footer__links">
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./aboutUs.html">Services</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__box3">
+        <p class="footer__links-title">Services</p>
+        <ul class="footer__links">
+          <li><a href="">Hiring & Onboarding</a></li>
+          <li><a href="">Employee Mgt</a></li>
+          <li><a href="">Leave Mgt</a></li>
+          <li><a href="">Alert/Notices</a></li>
+        </ul>
+      </div>
+      <div class="footer__box4">
+        <p>
+          Subscribe <br />
+          to our Newsletter
+        </p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+
+      <div class="footer__box5" id="contact">
+        <ul class="footer__links">
+          <li>
+            <a href="https://web.facebook.com/Employ-A-105029212248199">
+              <img src="./assets/images/facebook.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="https://twitter.com/employ_a">
+              <img src="./assets/images/twitter.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/employa_/">
+              <img src="./assets/images/Ig.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/company/employ-a/">
+              <img src="./assets/images/linkedin.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:+23490121274522">
+              <img src="./assets/images/tel.svg" alt="" />+23490121274522</a
+            >
+          </li>
+
+          <li>
+            <a href="mailto:employastartup3@gmail.com">
+              <img src="./assets/images/mail.svg" alt="" />
+              <p class="lastChild">employastartup3@gmail.com</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script defer src="./assets/script/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
