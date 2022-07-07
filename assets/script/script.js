@@ -1,3 +1,15 @@
+/// NAV RESPONSIVENESS ///
+
+const openNav = document.querySelector(".open");
+const closeNav = document.querySelector(".close");
+const sideNav = document.querySelector(".side-nav");
+
+openNav.addEventListener("click", () => sideNav.classList.add("visible"));
+
+closeNav.addEventListener("click", () => sideNav.classList.remove("visible"));
+
+// FAQ TOGGLE//
+
 const toggleIcons = document.querySelectorAll(".toggle-icon");
 
 toggleIcons.forEach((icon) => {
@@ -5,9 +17,9 @@ toggleIcons.forEach((icon) => {
     icon.parentNode.classList.toggle("show");
 
     if (icon.parentNode.classList.contains("show")) {
-      icon.textContent = "-";
+      icon.src = "./assets/images/- .svg";
     } else {
-      icon.textContent = "+";
+      icon.src = "./assets/images/+.svg";
     }
   });
 });

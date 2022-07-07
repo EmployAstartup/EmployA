@@ -5,10 +5,356 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/styles/shared.css" />
     <link rel="stylesheet" href="./assets/styles/pricing.css" />
 
-    <title>Document</title>
+    <script defer src="./assets/script/script.js"></script>
+
+    <title>Pricing / Employ-A</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
+      <a href="./index.html">
+        <img
+          src="./assets/images/employa logo coloured 1.svg"
+          alt="logo"
+          class="nav-bar__logo"
+        />
+      </a>
+
+      <button class="open">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu-2 mobile-btn open-btn"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#2c3e50"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+
+      <div class="nav-bar__links-container">
+        <ul class="nav-bar__links">
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <a href="./signIn.html" class="signIn--btn">Sign In</a>
+        <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+      </div>
+    </nav>
+
+    <div class="side-nav">
+      <button class="close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-x mobile-btn"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#2c3e50"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          id="close-btn"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <ul class="side-nav__links1">
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="side-nav__links2">
+        <a href="./signIn.html" class="signIn--btn">Sign In</a>
+        <a href="./getStarted.html" class="getStarted--btn">Get Started</a>
+      </div>
+    </div>
+
+    <!--Header-->
+    <header>
+      <div class="header-text">
+        Employ-a offers you the best price<br />for the best premium HR services
+        you can think of.
+      </div>
+    </header>
+
+    <div id="getStarted">
+      <div class="row">
+        <div class="col-sm-5 benefits">
+          <div class="benefits-head">
+            <img
+              alt="employ-a"
+              class="logo-ea"
+              src="./assets/images/PNG EMPPLOY LOGO.png"
+            /><br /><br />
+          </div>
+
+          <br /><br />
+          <ul class="services-list">
+            <li>Employee Management</li>
+            <li>Hiring and Onboarding</li>
+            <li>Leave Management</li>
+            <li>Alerts/Notices</li>
+            <li>Time Efficiency</li>
+            <li>Self Service</li>
+            <li>24/7 Support</li>
+            <li>User Friendly</li>
+          </ul>
+
+          <img src="./assets/images/bottom-dota.PNG" alt="dots-bottom" />
+        </div>
+
+        <div class="col-sm-7 benefits-start">
+          <form>
+            <h2>All in one plan for your HR needs</h2>
+            <br />
+            <p>
+              We offer the cheapest, yet most efficient proces for<br />
+              all your HR needs
+            </p>
+            <br />
+            <br />
+            <div class="row">
+              <div class="col-sm-5">
+                <h3>No of Employees</h3>
+                <p>
+                  You only pay for the number of employees in your Organisation.
+                </p>
+              </div>
+
+              <div class="col-sm-5">
+                <input
+                  class="num-input"
+                  type="number"
+                  name="employee-num"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-5">
+                <h3>Monthly Subscription Fee</h3>
+                <p>
+                  You only pay for the number of employees in your Organisation.
+                </p>
+              </div>
+
+              <div class="col-sm-5 price">
+                <h3 class="discount-price">N48, 500</h3>
+                <div class="main-class">
+                  <h4>N50, 000</h4>
+                  <p>10% off 10 employees and above</p>
+                </div>
+              </div>
+            </div>
+
+            <br /><br />
+            <button class="gs-btn" type="submit">
+              <a href="./getStarted.html"> Get Started</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="benefits-info">
+      <div class="row">
+        <div class="dot-1">
+          <div class="benefits-sec">
+            <h3>Employee Management</h3>
+            <br />
+            <p>
+              From employee engagement to retention, performance tracking,
+              evaluation and feedback.
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-2">
+          <div class="benefits-sec">
+            <h3>Hiring & Onboarding</h3>
+            <br />
+            <p>
+              Profile employees according to their skill-set, departments and
+              job roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-1">
+          <div class="benefits-sec">
+            <h3>Leave Management</h3>
+            <br />
+            <p>
+              Manage, approve and track time-off requests such as holidays, sick
+              leave, vacation, emergencies, etc.
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-2">
+          <div class="benefits-sec">
+            <h3>Alerts and Notices</h3>
+            <br />
+            <p>
+              Get informed of the latest updates within the scope of your
+              organization
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-1">
+          <div class="benefits-sec">
+            <h3>Time Efficiency</h3>
+            <br />
+            <p>
+              Time is of great essence, You get to assign and carry out tasks as
+              fast as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-2">
+          <div class="benefits-sec">
+            <h3>Self Service</h3>
+            <br />
+            <p>
+              We offer a self-service option where you get to carry out your
+              tasks in few easy steps
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-1">
+          <div class="benefits-sec">
+            <h3>24/7 Support</h3>
+            <br />
+            <p>
+              Our customer service is top-notch. We have capable hands on deck
+              to help with your pressing needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="dot-2">
+          <div class="benefits-sec">
+            <h3>User Friendly</h3>
+            <br />
+            <p>
+              Employa offers you easy navigation through all features with
+              outstanding user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="./assets/images/footer-logo.png"
+          alt="logo"
+          class="footer__logo"
+        />
+        <p class="footer__logo-text">Easy work, Easy outcome</p>
+      </div>
+
+      <div class="footer__box2">
+        <p class="footer__links-title">Quick Links</p>
+        <ul class="footer__links">
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./aboutUs.html">Services</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__box3">
+        <p class="footer__links-title">Services</p>
+        <ul class="footer__links">
+          <li><a href="">Hiring & Onboarding</a></li>
+          <li><a href="">Employee Mgt</a></li>
+          <li><a href="">Leave Mgt</a></li>
+          <li><a href="">Alert/Notices</a></li>
+        </ul>
+      </div>
+      <div class="footer__box4">
+        <p>
+          Subscribe <br />
+          to our Newsletter
+        </p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+
+      <div class="footer__box5" id="contact">
+        <ul class="footer__links">
+          <li>
+            <a href="https://web.facebook.com/Employ-A-105029212248199">
+              <img src="./assets/images/facebook.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="https://twitter.com/employ_a">
+              <img src="./assets/images/twitter.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/employa_/">
+              <img src="./assets/images/Ig.svg" alt="" />@employ_a</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/company/employ-a/">
+              <img src="./assets/images/linkedin.svg" alt="" />Employ-A</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:+23490121274522">
+              <img src="./assets/images/tel.svg" alt="" />+23490121274522</a
+            >
+          </li>
+
+          <li>
+            <a href="mailto:employastartup3@gmail.com">
+              <img src="./assets/images/mail.svg" alt="" />
+              <p class="lastChild">employastartup3@gmail.com</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

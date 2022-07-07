@@ -1,0 +1,252 @@
+body {
+  width: 100%;
+  margin: 0 0;
+  background-color: #f5f5f5;
+}
+
+h2,
+h3,
+h4 {
+  color: #134b99;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  padding: 200px 10px 300px 10px;
+  background-color: #134b99;
+  color: white;
+  text-align: center;
+  position: relative;
+  background-image: url("../images/diam-dot.svg");
+  background-repeat: no-repeat;
+  background-position: 780px 330px;
+}
+
+.header-text {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-family: "Wavehaus";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 33px;
+  letter-spacing: 0.005em;
+}
+
+.row {
+  width: 100%;
+}
+
+#getStarted > .row {
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-head {
+  height: 100px;
+  width: 100%;
+  padding: 17px 0;
+  background-image: url("../images/top-dota-2.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.logo-ea {
+  padding-top: 10px;
+  padding-left: 24px;
+  width: 220px;
+  opacity: 0.82;
+  left: 0;
+}
+
+.logo-2a {
+  bottom: 20px;
+}
+
+.services-list {
+  padding-top: 20px;
+  margin-left: 6%;
+}
+
+#getStarted {
+  width: 80%;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 35px 15px rgba(0, 0, 0, 0.116);
+  position: relative;
+  top: -170px;
+}
+
+.benefits {
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 5px 0 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    background-image: url("../images/diam-dot.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .benefits {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #getStarted {
+    width: 85%;
+  }
+
+  #getStarted .row {
+    flex-direction: column;
+  }
+
+  .benefits {
+    width: 100%;
+  }
+
+  .benefits-start {
+    width: 100%;
+  }
+}
+
+.benefits li {
+  line-height: 65px;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0 20px;
+}
+
+.services-list li::marker {
+  content: url("../images/Vectorcheckbox.svg");
+}
+
+form {
+  text-align: center;
+  margin: 70px 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+form p {
+  font-weight: 600;
+}
+
+form > p {
+  font-style: normal;
+  font-size: 20px;
+}
+form > .row {
+  margin: 30px 0 20px 0;
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.num-input {
+  margin: 17px auto;
+  width: 90%;
+  height: 60px;
+  border: 2px solid #134b99;
+  border-radius: 4px;
+  color: #134b99;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.num-input:focus {
+  border: 2px solid #134b99;
+}
+
+.benefits-start h3 {
+  font-size: 28px;
+}
+
+.benefits-start .row p {
+  font-size: 14px;
+}
+
+.price {
+  background-color: #134b99;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.price h3 {
+  color: #f5f5f5;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.price h4 {
+  color: #6287bb;
+}
+
+.gs-btn {
+  color: #f5f5f5;
+  background-color: #134b99;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 18px;
+}
+
+.gs-btn:hover {
+  opacity: 0.85;
+}
+
+.gs-btn:active {
+  background-color: #6287bb;
+}
+
+.benefits-info {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 70px;
+  background-image: url("../images/bg-vector.png");
+  background-repeat: no-repeat;
+}
+
+.benefits-info .row {
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.dot-1,
+.dot-2 {
+  width: 290px;
+  height: 310px;
+  margin: 20px 0;
+  padding: 33px 0 0px 0;
+  background-image: url("../images/top-dota.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.dot-2 {
+  background-image: url("../images/bottom-dota.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.benefits-sec {
+  width: 230px;
+  height: 255px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+  padding-left: 0;
+}

@@ -1,0 +1,71 @@
+@import "../variables";
+
+body {
+  overflow-x: hidden;
+
+  .dots2 {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.signIn {
+  .signIn__form-container {
+    .title {
+      font-weight: 700;
+      color: $primary-blue-600;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .subtitle {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: $primary-blue-700;
+      margin: 20px 0 86px;
+    }
+
+    .employment-info {
+      color: $primary-blue-700;
+      text-align: left;
+    }
+
+    .company {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 828px) {
+    width: 95%;
+
+    .signIn__form-container {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 698px) {
+    .subtitle {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  @media only screen and (max-width: 235px) {
+    word-break: break-all;
+  }
+}

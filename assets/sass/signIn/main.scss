@@ -1,0 +1,219 @@
+@import "../variables";
+@import "../typography";
+
+body {
+  background-color: $primary-blue-600;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+
+  .dots1 {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  .large-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 85%;
+    max-height: 80%;
+  }
+
+  .dots2 {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+  }
+}
+
+.center-svg {
+  position: absolute;
+  top: 221px;
+  left: 10%;
+}
+
+.signIn {
+  z-index: 500;
+  position: relative;
+  background-color: $white;
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.25rem 0;
+  text-align: center;
+  box-shadow: 0px 0px 71px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 785px;
+
+  &__form-container {
+    width: 70%;
+  }
+
+  .success {
+    display: none;
+    width: 70%;
+  }
+
+  &__title {
+    text-align: center;
+    color: $primary-blue-600;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: $primary-blue-700;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 4px;
+  }
+
+  &__form {
+    margin-top: 2rem;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+    text-align: left;
+
+    .error {
+      color: $red;
+      line-height: 19px;
+      font-weight: 600;
+    }
+
+    .label {
+      color: $primary-blue-700;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      background-color: #fff;
+      width: fit-content;
+    }
+
+    input {
+      font-family: inherit;
+      background-color: transparent;
+      border: 1px solid $primary-blue-600;
+      outline: none;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    input:focus {
+      color: currentColor;
+    }
+
+    input:focus .label {
+      transform: translateY(100%);
+      margin-left: 10px;
+    }
+
+    input::placeholder {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+    }
+  }
+
+  &__checkbox {
+    text-align: left;
+
+    input {
+      width: 20px;
+      height: 20px;
+    }
+
+    label {
+      line-height: 19px;
+      font-weight: 600;
+      color: $primary-blue-700;
+      vertical-align: top;
+    }
+  }
+
+  &__forgotP--text {
+    text-align: left;
+    color: $grey;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.001em;
+    font-size: 12px;
+    margin-top: 14px;
+    a {
+      color: $primary-blue-600;
+    }
+  }
+
+  &__button {
+    font-family: inherit;
+    text-align: center;
+    color: $white;
+    background-color: $primary-blue-600;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.0125em;
+    margin: 33px auto 8px;
+  }
+
+  &__footer-text {
+    letter-spacing: 0.001em;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    color: $primary-blue-700;
+
+    a {
+      color: $primary-blue-600;
+    }
+  }
+}
+
+.signIn__footer {
+  z-index: 500;
+  position: relative;
+
+  display: flex;
+  margin-left: 70px;
+  padding-bottom: 42px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 15rem;
+
+  .logo-box {
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 7px;
+  }
+
+  .text {
+    color: $white;
+    font-weight: 600;
+    line-height: 19.2px;
+  }
+
+  .links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    justify-content: start;
+  }
+}
