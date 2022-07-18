@@ -138,6 +138,11 @@ button {
     line-height: 29px;
     text-decoration: none;
     color: #134b99; }
+  .nav-bar__links a:hover,
+  .nav-bar__links a:active,
+  .nav-bar__links a:focus {
+    border-bottom: 3px solid #134b99;
+    padding-bottom: 0.5rem; }
   @media only screen and (max-width: 1024px) {
     .nav-bar {
       padding: 21px 2rem; } }
@@ -183,6 +188,11 @@ button {
     line-height: 29px;
     text-decoration: none;
     color: #134b99; }
+  .side-nav__links1 a:hover,
+  .side-nav__links1 a:active,
+  .side-nav__links1 a:focus {
+    border-bottom: 3px solid #134b99;
+    padding-bottom: 0.5rem; }
   .side-nav__links2 {
     display: flex;
     flex-direction: column;
@@ -228,14 +238,21 @@ button {
     border-radius: 3px;
     margin: 8px 0;
     width: 100%;
-    max-width: 300px; }
-  .footer__box4 input:focus {
+    max-width: 300px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #d0dbeb; }
+  .footer__box4 input:focus,
+  .footer__box4 input:active {
     color: currentColor; }
   .footer__box4 input::placeholder {
     color: #d0dbeb;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px; }
+  .footer__box4 input.error {
+    border-color: red; }
   .footer__box4 button {
     display: block;
     background-color: #d0dbeb;

@@ -23,3 +23,23 @@ toggleIcons.forEach((icon) => {
     }
   });
 });
+
+// Email Subscription validity
+const form = document.getElementById("subscribe-form");
+const email = document.getElementById("email-input-field");
+const subscribeBtn = document.querySelector(".subscribe-btn");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (
+    email.value !== "" &&
+    email.value.includes("@") &&
+    email.value.length > 6
+  ) {
+    console.log(email.value);
+  } else {
+    console.log(123);
+    email.classList.add("error");
+    return;
+  }
+});

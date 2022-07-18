@@ -52,9 +52,14 @@
       margin: 8px 0;
       width: 100%;
       max-width: 300px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      color: $primary-blue-100;
     }
 
-    input:focus {
+    input:focus,
+    input:active {
       color: currentColor;
     }
 
@@ -63,6 +68,10 @@
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
+    }
+
+    input.error {
+      border-color: red;
     }
 
     button {

@@ -76,6 +76,13 @@
     color: $primary-blue-600;
   }
 
+  &__links a:hover,
+  &__links a:active,
+  &__links a:focus {
+    border-bottom: 3px solid #134b99;
+    padding-bottom: 0.5rem;
+  }
+
   @media only screen and (max-width: 1024px) {
     padding: 21px 2rem;
   }
@@ -133,6 +140,13 @@
       line-height: 29px;
       text-decoration: none;
       color: $primary-blue-600;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+      border-bottom: 3px solid #134b99;
+      padding-bottom: 0.5rem;
     }
   }
 
